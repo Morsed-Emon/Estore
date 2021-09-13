@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,inital-scale=1.0">
+	<title>Single-Product Details</title>
+	<link rel="stylesheet" href="product-details.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+      <!-- Themefisher Icon font -->
+  <link rel="stylesheet" href="font.css">
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+  
+  <!-- Animate css -->
+  <link rel="stylesheet" href="animate.css">
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="slick.css">
+  <link rel="stylesheet" href="slick-theme.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body id="body">
+
+<!-- Start Top Header Bar -->
+<section class="top-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-xs-12 col-sm-4">
+			</div>
+			<div class="col-md-4 col-xs-12 col-sm-4">
+				<!-- Site Logo -->
+				<div class="logo text-center">
+					<a href="index.html">
+						<!-- replace logo here -->
+						<svg width="135px" height="29px" viewBox="0 0 155 29" version="1.1" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="40"
+								font-family="AustinBold, Austin" font-weight="bold">
+								<g id="Group" transform="translate(-108.000000, -297.000000)" fill="#000000">
+									<text id="ESTORE">
+										<tspan x="108.94" y="325">ESTORE</tspan>
+									</text>
+								</g>
+							</g>
+						</svg>
+					</a>
+				</div>
+			</div>
+					<!-- Search -->
+					<li class="dropdown search dropdown-slide">
+						<a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><i
+								class="tf-ion-ios-search-strong"></i> Search</a>
+						<ul class="dropdown-menu search-dropdown">
+							<li>
+								<form action="post"><input type="search" class="form-control" placeholder="Search..."></form>
+							</li>
+						</ul>
+					</li><!-- / Search -->
+
+					
+
+				</ul><!-- / .nav .navbar-nav .navbar-right -->
+			</div>
+		</div>
+	</div>
+</section><!-- End Top Header Bar -->
+
+
+<!-- Main Menu Section -->
+<section class="menu">
+	<nav class="navbar navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<h2 class="menu-title">Main Menu</h2>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+					aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+			</div><!-- / .navbar-header -->
+
+			<!-- Navbar Links -->
+			<div id="navbar" class="navbar-collapse collapse text-center">
+				<ul class="nav navbar-nav">
+
+					<!-- Home -->
+					<li class="dropdown ">
+						<a href="index.html">Home</a>
+					</li><!-- / Home -->
+
+					<!-- Elements -->
+					<li class="dropdown dropdown-slide">
+						<a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350
+							role="button" aria-haspopup="true" aria-expanded="false">Shop <span
+								class="tf-ion-ios-arrow-down"></span></a>
+						<div class="dropdown-menu">
+							<div class="row">
+
+								<!-- Basic -->
+								<div class="col-lg-6 col-md-6 mb-sm-3">
+									<ul>
+										<li class="dropdown-header">Pages</li>
+										<li role="separator" class="divider"></li>
+										<li><a href="shop.html">Shop</a></li>
+										<li><a href="checkout.html">Checkout</a></li>
+										<li><a href="cart.html">Cart</a></li>
+										<li><a href="pricing.html">Pricing</a></li>
+										<li><a href="confirmation.html">Confirmation</a></li>
+
+									</ul>
+								</div>
+
+								<!-- Layout -->
+								<div class="col-lg-6 col-md-6 mb-sm-3">
+									<ul>
+										<li class="dropdown-header">Layout</li>
+										<li role="separator" class="divider"></li>
+										<li><a href="product-single.html">Product Details</a></li>
+										<li><a href="shop-sidebar.html">Shop With Sidebar</a></li>
+
+									</ul>
+								</div>
+
+							</div><!-- / .row -->
+						</div><!-- / .dropdown-menu -->
+					</li><!-- / Elements -->
+
+
+					<!-- Pages -->
+					<li class="dropdown full-width dropdown-slide">
+						<a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350
+							role="button" aria-haspopup="true" aria-expanded="false">Pages <span
+								class="tf-ion-ios-arrow-down"></span></a>
+						<div class="dropdown-menu">
+							<div class="row">
+
+								<!-- Introduction -->
+                                <div class="col-sm-3 col-xs-12">
+                                    <ul>
+                                        <li class="dropdown-header">Introduction</li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="404.html">404 Page</a></li>
+                                        <li><a href="coming-soon.html">Coming Soon</a></li>
+                                        <li><a href="faq.html">FAQ</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Contact -->
+                                <div class="col-sm-3 col-xs-12">
+                                    <ul>
+                                        <li class="dropdown-header">Dashboard</li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="dashboard.html">User Interface</a></li>
+                                        <li><a href="order.html">Orders</a></li>
+                                        <li><a href="address.html">Address</a></li>
+                                        <li><a href="profile-details.html">Profile Details</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Utility -->
+                                <div class="col-sm-3 col-xs-12">
+                                    <ul>
+                                        <li class="dropdown-header">Utility</li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="login.html">Login Page</a></li>
+                                        <li><a href="signup.html">Signin Page</a></li>
+                                        <li><a href="forget-password.html">Forget Password</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Mega Menu -->
+                                <div class="col-sm-3 col-xs-12">
+                                    <a href="shop.html">
+                                        <img class="img-responsive" src="images/1.jpg" alt="menu image" />
+                                    </a>
+                                </div>
+                            </div><!-- / .row -->
+                        </div><!-- / .dropdown-menu -->
+                    </li><!-- / Pages -->
+                    				<!-- Shop -->
+				<li class="dropdown dropdown-slide">
+					<a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350"
+						role="button" aria-haspopup="true" aria-expanded="false">Products<span
+							class="tf-ion-ios-arrow-down"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="typography.html">Men Zone</a></li>
+						<li><a href="buttons.html">Women Zone</a></li>
+						<li><a href="alerts.html">Kid Zone</a></li>
+					</ul>
+				</li><!-- / Blog -->
+			</ul><!-- / .nav .navbar-nav -->
+            
+			</div>
+			<!--/.navbar-collapse -->
+		</div><!-- / .container -->
+	</nav>
+</section>
+
+<!-------------------------cart--------------->
+<div class="container">
+    <h1>MEN ZONE
+        <div style="float:right;cursor:pointer;">
+            <span class="glyphicon glyphicon-shopping-cart my-cart-icon">
+                <span class="badge badge-notify my-cart-badge"></span>
+            </span>
+        </div>
+    </h1>
+
+<button type="addNewProduct" name="addNewProduct" id="addNewProduct">
+    Add New Product
+</button>
+
+
+
+
+
+<!---------------Single Product Details-------------------------------->
+
+
+
+
+
+
+
+<!-----------------More Cart---------------------->
+<div class="row">
+    <div class="col-md-3 text-center">
+        <img src="images/product-2.jpg" width="270" height="270">
+        <br> <br>
+        Product 1-<strong>$10</strong>
+        <br> <br>
+
+        <button class="btn btn-danger my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/product-2.jpg">
+            Add To Cart
+        </button>
+        <a href="" class="btn btn-info">Details</a>
+    </div>
+
+
+<div class="col-md-3 text-center">
+        <img src="images/buy-1.jpg" width="270" height="270">
+        <br> <br>
+        Product 1-<strong>$20</strong>
+        <br> <br>
+
+        <button class="btn btn-danger my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/product-3.jpg">
+            Add To Cart
+        </button>
+        <a href="single-product.html" class="btn btn-info">Details</a>
+    </div>
+
+
+
+
+
+
+    <div class="col-md-3 text-center">
+        <img src="images/product-4.jpg" width="270" height="270">
+        <br> <br>
+        Product 1-<strong>$30</strong>
+        <br> <br>
+
+        <button class="btn btn-danger my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/product-4.jpg">
+            Add To Cart
+        </button>
+        <a href="" class="btn btn-info">Details</a>
+    </div>
+
+
+   <div class="col-md-3 text-center">
+        <img src="images/product-5.jpg" width="270" height="270">
+        <br> <br>
+        Product 1-<strong>$40</strong>
+        <br> <br>
+
+        <button class="btn btn-danger my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/product-5.jpg">
+            Add To Cart
+        </button>
+        <a href="" class="btn btn-info">Details</a>
+
+    </div>
+
+<br><br><br><br>
+
+<br><br><br><br>
+
+
+
+       <div class="col-md-3 text-center">
+        <img src="images/product-6.jpg" width="270" height="270">
+        <br> <br>
+        Product 1-<strong>$30</strong>
+        <br> <br>
+
+        <button class="btn btn-danger my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/product-6.jpg">
+            Add To Cart
+        </button>
+        <a href="" class="btn btn-info">Details</a>
+    </div>
+
+
+   <div class="col-md-3 text-center">
+        <img src="images/product-7.jpg" width="270" height="270">
+        <br> <br>
+        Product 1-<strong>$30</strong>
+        <br> <br>
+
+        <button class="btn btn-danger my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/product-7.jpg">
+            Add To Cart
+        </button>
+        <a href="" class="btn btn-info">Details</a>
+    </div>
+
+
+
+   <div class="col-md-3 text-center">
+        <img src="images/product-8.jpg" width="270" height="270">
+        <br> <br>
+        Product 1-<strong>$50</strong>
+        <br> <br>
+
+        <button class="btn btn-danger my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/product-8.jpg">
+            Add To Cart
+        </button>
+        <a href="" class="btn btn-info">Details</a>
+    </div>
+
+   <div class="col-md-3 text-center">
+        <img src="images/product-9.jpg" width="270" height="270">
+        <br> <br>
+        Product 1-<strong>$30</strong>
+        <br> <br>
+
+        <button class="btn btn-danger my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/product-9.jpg">
+            Add To Cart
+        </button>
+        <a href="" class="btn btn-info">Details</a>
+    </div>
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+<br><br><br><br>
+
+<br><br><br><br>
+
+<br><br><br><br>
+
+
+
+<!-----------------Featured Products ------------->
+
+
+
+<!-----------------------------footer------------------>
+<footer class="footer section text-center">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="social-media">
+                <li>
+                    <a href="https://www.facebook.com/themefisher">
+                        <i class="tf-ion-social-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/themefisher">
+                        <i class="tf-ion-social-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/themefisher">
+                        <i class="tf-ion-social-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.pinterest.com/themefisher/">
+                        <i class="tf-ion-social-pinterest"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="footer-menu text-uppercase">
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+                <li>
+                    <a href="shop.html">SHOP</a>
+                </li>
+                <li>
+                    <a href="pricing.html">Pricing</a>
+                </li>
+                <li>
+                    <a href="contact.html">PRIVACY POLICY</a>
+                </li>
+            </ul>
+            <p class="copyright-text">Copyright &copy;2021, Developed by Morsed Emon</p>
+        </div>
+    </div>
+    </div>
+    </footer>
+
+
+<!----------------------js  for  toggle menu----------------------->
+<script>
+	var MenuItems=document.getELementById("MenuItems");
+	MenuItems.style.maxHeight="0px";
+
+	function menutoggle()
+	{
+
+		if(MenuItems.style.maxHeight="0px")
+		{	MenuItems.style.maxHeight="200px"
+}
+else{
+	MenuItems.style.maxHeight="0px"
+	}
+}
+
+
+</script>
+
+
+
+<!--------------------------------js for product gallery-------------------------->
+
+<script>
+	var ProductImg=document.getELementById("ProductImg");
+	var SmallImg=document.getELementByIdClassName("small-img");
+SmallImg[0].onclick=function()
+{
+	ProductImg.src=SmallImg[0].src;
+}
+SmallImg[1].onclick=function()
+{
+	ProductImg.src=SmallImg[1].src;
+}
+
+SmallImg[2].onclick=function()
+{
+	ProductImg.src=SmallImg[2].src;
+}
+
+SmallImg[3].onclick=function()
+{
+	ProductImg.src=SmallImg[3].src;
+}
+
+</script>
+
+
+
+<!----------------------js for add to cart------------>
+<script type="text/javascript">
+	var noti=document.queryselector('');
+	var select=document.queryselector('.select');
+	var button=document.getELementByIdClassName('btn');
+
+	for(but of button)
+	{
+		but.addEventListener('click',(e)=>
+		{
+			var add=Number(noti.getAttribute('data-count')||0);
+			noti.setAttribute('data-count',add+1);
+			noti.classList.add('zero');
+		})
+	}
+	
+</script>
+
+<!---------------------------js for cart----------------------->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="jquery.mycart.js"></script>
+
+<script src="cart.js"></script>
+
+
+</body>
+</html>
