@@ -29,7 +29,7 @@
                         <div class="row px-3"> <img src="https://i.imgur.com/pFCf3zf.jpg" class="logo"> </div>
                         <div class="row px-3 justify-content-center mt-4 mb-5"> <img src="https://i.imgur.com/ucirQQf.png" class="image"> </div>
                         <div class="row px-3 text-center justify-content-center">
-                            <h4>Collect everything in one place</h4> <small class="text-muted px-5 mx-1 mx-lg-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</small>
+                            <h4>Collect everything from ESTORE</h4> <small class="text-muted px-5 mx-1 mx-lg-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</small>
                         </div>
                     </div>
                 </div>

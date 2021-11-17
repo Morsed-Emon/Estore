@@ -29,7 +29,7 @@
                     <div class="login_wrapper">
                     <form action="login-user.php" method="POST" autocomplete="">
                         <div class="row">
-                            <h1>ESTORE ADMIN PANEL</h1>
+                            <h1> ESTORE ADMIN PANEL</h1>
                             <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6"> <a href="#" class="btn btn-primary facebook"> <span>Login with Facebook</span> <i class="fa fa-facebook"></i> </a> </div>
                             <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6"> <a href="#" class="btn btn-primary google-plus"> Login with Google <i class="fa fa-google-plus"></i> </a> </div>
                         </div>
