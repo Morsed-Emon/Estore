@@ -32,7 +32,7 @@ else {
 
 </button><!-- navbar-ex1-collapse Ends -->
 
-<a class="navbar-brand" href="index.php?dashboard" >Admin Panel</a>
+<a class="navbar-brand" href="index.php?dashboard" >ESTORE ADMIN</a>
 
 
 </div><!-- navbar-header Ends -->

@@ -70,7 +70,7 @@ $count_pending_orders = mysqli_num_rows($run_pending_orders);
 
 <head>
 
-<title>Admin Panel</title>
+<title>ESTORE ADMIN PANEL</title>
 
 <link href="css/bootstrap.min.css" rel="stylesheet">
 
