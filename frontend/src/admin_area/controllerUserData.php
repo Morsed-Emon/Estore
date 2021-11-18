@@ -63,7 +63,7 @@ if(isset($_POST['signup'])){
             if($update_res){
                 $_SESSION['name'] = $name;
                 $_SESSION['email'] = $email;
-                header('location: home.php');
+                header('location: login.php');
                 exit();
             }else{
                 $errors['otp-error'] = "Failed while updating code!";
@@ -176,13 +176,8 @@ if(isset($_POST['signup'])){
     
    //if login now button click
     if(isset($_POST['login-now'])){
-        header('Location: login-user.php');
+        header('Location: admin_area/dashboard.php');
     }
 
 
-
-
-
-
-    
 ?>

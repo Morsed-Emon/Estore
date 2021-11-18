@@ -1,16 +1,4 @@
-/*
 
-Template : E commerce Store in php and mysqli with bootstrap 3
-Author Name : Mohammed Tahir Ahmed
-Author Email : sad.ahmed22224@gmail.com
-Theme URL: http://www.computerfever.com
-Version : 1.0
-
-
-
-*/
-
-/* Global Styles */
 
 body {
 
@@ -67,7 +55,7 @@ padding:0 15px;
 
 .top-nav>li{
 display:inline-block;
-float:left;
+float: left;
 
 }
 
@@ -93,7 +81,7 @@ top:51px;
 width:255px;
 border-radius:0;
 overflow-y:auto;
-background-color: #222;
+background-color:green;
 bottom:0;
 overflow-x:hidden;
 padding-bottom:40px;
