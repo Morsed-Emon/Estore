@@ -37,7 +37,7 @@
                     <div class="card2 card border-0 px-4 py-5">
                     <form action="signup.php" method="POST" autocomplete="">
                         <h3 class="mb-1">Create ESTORE Account</h3>
-                        <p class="mb-4 text-sm">Already have an account? <a class="text-primary login" href="login.php">Log In</a></p>
+                        <p class="mb-4 text-sm">Already have an account? <a class="text-primary login" href="login_form.php">Log In</a></p>
                         <div class="row">
                             <div class="col-sm-6">
                                 <p class="google"><span class="fa fa-google"></span><small class="pl-3 pr-1">Sign up with google</small></p>
