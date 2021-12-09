@@ -65,7 +65,7 @@
         		</div>
         		<input type="hidden" name="add_brand" value="1">
         		<div class="col-12">
-        			<button type="button" class="btn btn-primary add-brand">Add Product</button>
+        			<button type="button" class="btn btn-primary add-brand">Add Brand</button>
         		</div>
         	</div>
         	

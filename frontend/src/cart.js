@@ -14,7 +14,7 @@ $(function () {
     }
 
     $('.my-cart-btn').myCart({
-      currencySymbol: '$',
+      currencySymbol: '৳',
       classCartIcon: 'my-cart-icon',
       classCartBadge: 'my-cart-badge',
       classProductQuantity: 'my-product-quantity',

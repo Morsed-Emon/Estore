@@ -110,7 +110,7 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 								<div class='panel-body'>
 									<img src='product_images/$pro_image' style='width:160px; height:250px;'/>
 								</div>
-								<div class='panel-heading'>$.$pro_price.00
+								<div class='panel-heading'>৳ $pro_price.00
 									<button pid='$pro_id' style='float:right;' id='product' class='btn btn-danger btn-xs'>AddToCart</button>
 								</div>
 							</div>
@@ -243,7 +243,7 @@ if (isset($_POST["Common"])) {
 	if (isset($_POST["checkOutDetails"])) {
 		if (mysqli_num_rows($query) > 0) {
 			//display user cart item with "Ready to checkout" button if user is not login
-			echo "<form method='post' action='login_form.php'>";
+			echo "<form method='post' action='https://www.sandbox.paypal.com/cgi-bin/webscr'>";
 				$n=0;
 				while ($row=mysqli_fetch_array($query)) {
 					$n++;

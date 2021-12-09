@@ -1,9 +1,9 @@
 <?php
 require "config/constants.php";
 session_start();
-if(isset($_SESSION["uid"])){
-	header("location:profile.php");
-}
+//if(isset($_SESSION["uid"])){
+	//header("location:profile.php");
+//}
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,6 +15,7 @@ if(isset($_SESSION["uid"])){
 		<script src="js/bootstrap.min.js"></script>
 		<script src="main.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="font.css">
 		<style></style>
 	</head>
 <body>
@@ -34,8 +35,10 @@ if(isset($_SESSION["uid"])){
 			</div>
 		<div class="collapse navbar-collapse" id="collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="index.php"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+				<li><a href="index.html"><span class="glyphicon glyphicon-home"></span>Advertisement</a></li>
 				<li><a href="index.php"><span class="glyphicon glyphicon-modal-window"></span>Product</a></li>
+				<li><a href="signup.php"><span class="glyphicon glyphicon-user"></span>SignUp</a></li>
+				
 			</ul>
 			<form class="navbar-form navbar-left">
 		        <div class="form-group">
@@ -69,24 +72,14 @@ if(isset($_SESSION["uid"])){
 						</div>
 					</div>
 				</li>
-				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>SignIn</a>
-					<ul class="dropdown-menu">
-						<div style="width:300px;">
-							<div class="panel panel-primary">
-								<div class="panel-heading">Login</div>
-								<div class="panel-heading">
-									<form onsubmit="return false" id="login">
-										<label for="email">Email</label>
-										<input type="email" class="form-control" name="email" id="email" required/>
-										<label for="email">Password</label>
-										<input type="password" class="form-control" name="password" id="password" required/>
-										<p><br/></p>
-										<a href="#" style="color:white; list-style:none;">Forgotten Password</a><input type="submit" class="btn btn-success" style="float:right;">
-									</form>
-								</div>
-								<div class="panel-footer" id="e_msg"></div>
-							</div>
-						</div>
+				
+		
+							
+							
+							
+							
+							
+
 					</ul>
 				</li>
 			</ul>
@@ -142,12 +135,84 @@ if(isset($_SESSION["uid"])){
 							</div>
 						</div> -->
 					</div>
-					<div class="panel-footer">&copy;Developed by Morsed Emon</div>
+
+
+
+					<div class="col-md-12">
+	<center>
+		<ul class="pagination" id="pageno">
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+		</ul>
+	</center>
+</div>
+
+					<div class="panel-footer"></div>
 				</div>
 			</div>
 			<div class="col-md-1"></div>
 		</div>
 	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	<footer class="footer section text-center">
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+        <ul class="social-media">
+            <li>
+                <a href="https://www.facebook.com/themefisher">
+                    <i class="tf-ion-social-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/themefisher">
+                    <i class="tf-ion-social-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/themefisher">
+                    <i class="tf-ion-social-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.pinterest.com/themefisher/">
+                    <i class="tf-ion-social-pinterest"></i>
+                </a>
+            </li>
+        </ul>
+        <ul class="footer-menu text-uppercase">
+            <li>
+                <a href="contact.html">CONTACT</a>
+            </li>
+            <li>
+                <a href="shop.html">SHOP</a>
+            </li>
+            <li>
+                <a href="pricing.html">Pricing</a>
+            </li>
+            <li>
+                <a href="contact.html">PRIVACY POLICY</a>
+            </li>
+        </ul>
+        <p class="copyright-text">Copyright &copy;2021, Developed by Morsed Emon</p>
+    </div>
+</div>
+</div>
+</footer>
+
 </body>
 </html>
 
