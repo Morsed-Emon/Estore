@@ -138,25 +138,50 @@ session_start();
 
 
 
-					<div class="col-md-12">
-	<center>
-		<ul class="pagination" id="pageno">
-			<li><a href="#">1</a></li>
-			<li><a href="#">2</a></li>
-			<li><a href="#">3</a></li>
-			<li><a href="#">4</a></li>
-		</ul>
-	</center>
-</div>
+
+
+
+
+
+
+
+
+
+
 
 					<div class="panel-footer"></div>
 				</div>
 			</div>
-			<div class="col-md-1"></div>
+			<div class="col-md-1" >
+				
+			</div>
+
+
 		</div>
+
+
 	</div>
 
-
+<div>
+	<center>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-end">
+            <li class="page-item">
+              <a class="page-link" href="index.html" tabindex="-1">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="index.php">1</a></li>
+            <li class="page-item"><a class="page-link" href="checkout/index.php">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">4</a></li>
+			<li class="page-item"><a class="page-link" href="#">5</a></li>
+			<li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+</center>
+</div>
 
 
 
