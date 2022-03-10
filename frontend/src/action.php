@@ -243,7 +243,7 @@ if (isset($_POST["Common"])) {
 	if (isset($_POST["checkOutDetails"])) {
 		if (mysqli_num_rows($query) > 0) {
 			//display user cart item with "Ready to checkout" button if user is not login
-			echo "<form method='post' action='https://www.sandbox.paypal.com/cgi-bin/webscr'>";
+			echo "<form method='post' action='http://localhost/Project1/frontend/src/checkout/checkout.php'>";
 				$n=0;
 				while ($row=mysqli_fetch_array($query)) {
 					$n++;

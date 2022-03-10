@@ -36,7 +36,7 @@ session_start();
 		<div class="collapse navbar-collapse" id="collapse">
 			<ul class="nav navbar-nav">
 				<li><a href="index.html"><span class="glyphicon glyphicon-home"></span>Advertisement</a></li>
-				<li><a href="index.php"><span class="glyphicon glyphicon-modal-window"></span>Product</a></li>
+				<li><a href="http://localhost/Project1/frontend/src/checkout/index.php"><span class="glyphicon glyphicon-modal-window"></span>Product</a></li>
 				<li><a href="signup.php"><span class="glyphicon glyphicon-user"></span>SignUp</a></li>
 				
 			</ul>

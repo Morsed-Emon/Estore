@@ -12,6 +12,7 @@ require "config/constants.php";
 		<script src="js/jquery2.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="main.js"></script>
+		<script src="cart.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
 	</head>
 <body>
