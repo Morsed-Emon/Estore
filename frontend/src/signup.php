@@ -1,5 +1,66 @@
 <?php require_once "controllerUserData.php";
+require 'config2.php';
 
+$login_button = '';
+
+if(isset($_GET['code']))
+{
+
+    $token = $google_client->fetchAccessTokenWithAuthCode($_GET['code']);
+
+
+
+    if(!isset($token['error']))
+    {
+        $google_client->setAccessToken($token['access_token']);
+
+
+        $_SESSION['access_token'] = $token['access_token'];
+
+        $google_service = new Google_Service_Oauth2($google_client);
+
+        $data = $google_service->userinfo->get();
+
+
+        if(!empty($data['given_name']))
+        {
+            $_SESSION['user_first_name'] = $data['given_name'];
+        }
+
+
+        if(!empty($data['family_name']))
+        {
+            $_SESSION['user_last_name'] = $data['family_name'];
+        }
+
+
+        if(!empty($data['email']))
+        {
+            $_SESSION['user_email_address'] = $data['email'];
+        }
+
+
+        if(!empty($data['gender']))
+        {
+            $_SESSION['user_gender'] = $data['gender'];
+        }
+
+
+        if(!empty($data['picture']))
+        {
+            $_SESSION['user_image'] = $data['picture'];
+        }
+
+    }
+
+}
+
+
+
+if(!isset($_SESSION['access_token'])){
+
+
+     $login_button = '<a href='.$google_client->createAuthUrl().'></a>'?>
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,10 +92,10 @@
             <div class="row d-flex">
                 <div class="col-lg-6">
                     <div class="card1 bg-light pb-5">
-                        <div class="row px-3"> <img src="https://i.imgur.com/pFCf3zf.jpg" class="logo"> </div>
-                        <div class="row px-3 justify-content-center mt-4 mb-5"> <img src="https://i.imgur.com/ucirQQf.png" class="image"> </div>
+                        
+                        <div class="row px-3 justify-content-center mt-4 mb-5"> <img src="product_images/logo1.png" width="400" class="image"> </div>
                         <div class="row px-3 text-center justify-content-center">
-                            <h4>Collect everything from ESTORE</h4> <small class="text-muted px-5 mx-1 mx-lg-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</small>
+                            <h4>Collect everything </h4> <small class="text-muted px-5 mx-1 mx-lg-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</small>
                         </div>
                     </div>
                 </div>
@@ -45,11 +106,11 @@
                         <p class="mb-4 text-sm">Already have an account? <a class="text-primary login" href="login-user.php">Log In</a></p>
                         <div class="row">
                             <div class="col-sm-6">
-                                <p class="google"><span class="fa fa-google"></span><small class="pl-3 pr-1">Sign up with google</small></p>
+                             <a href="<?php echo $google_client->createAuthUrl() ?>">   <p class="google"><span class="fa fa-google"></span><small class="pl-3 pr-1">Sign up with google</small></p><a>
                             </div>
-                            <div class="col-sm-6">
-                                <p class="fb"><span class="fa fa-facebook"></span><small class="pl-3 pr-1">Sign up with facebook</small></p>
-                            </div>
+                           
+                           
+                            
                         </div>
                         <div class="row px-3">
                             <div class="line"></div> <small class="text-muted or text-center">OR</small>
@@ -105,6 +166,37 @@
             </div>
         </div>
     </div>
+    <?php } ?>
+
+<div class="container">
+    <div class="panel panel-default">
+     <?php
+     if($login_button === "")
+     {
+         echo '<div class="panel-heading">Welcome User</div><div class="panel-body">';
+         echo '<img src="'.$_SESSION['user_image'].'" class="img-responsive img-circle img-thumbnail">';
+         echo '<h3><b>Name :</b> '.$_SESSION['user_first_name'].' '.$_SESSION['user_last_name'].'</h3>';
+         echo '<h3><b>Email :</b> '.$_SESSION['user_email_address'].'</h3>';
+         echo '<h3><a href="logout.php">Logout</h3></div>';
+     }
+
+     else
+     {
+            echo '<div align="center">'.$login_button . '</div>';
+     }
+     ?>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
