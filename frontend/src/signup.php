@@ -102,15 +102,19 @@ if(!isset($_SESSION['access_token'])){
                 <div class="col-lg-6">
                     <div class="card2 card border-0 px-4 py-5">
                     <form action="signup.php" method="POST" autocomplete="">
-                        <h3 class="mb-1">Create ESTORE Account</h3>
+                        <h4 class="mb-1">Create <img src="product_images/logo1.png" width="80"> Account</h4>
                         <p class="mb-4 text-sm">Already have an account? <a class="text-primary login" href="login-user.php">Log In</a></p>
                         <div class="row">
                             <div class="col-sm-6">
                              <a href="<?php echo $google_client->createAuthUrl() ?>">   <p class="google"><span class="fa fa-google"></span><small class="pl-3 pr-1">Sign up with google</small></p><a>
                             </div>
-                           
-                           
-                            
+                            <div class="col-sm-6">  
+  
+<a href="javascript:void(0)" onclick="fbLogin()"><p class="fb"><span class="fa fa-facebook"></span><small class="pl-3 pr-1">Sign up with facebook</small></p><a>
+<?php } ?>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+                            </div>
                         </div>
                         <div class="row px-3">
                             <div class="line"></div> <small class="text-muted or text-center">OR</small>
@@ -166,7 +170,7 @@ if(!isset($_SESSION['access_token'])){
             </div>
         </div>
     </div>
-    <?php } ?>
+   
 
 <div class="container">
     <div class="panel panel-default">
@@ -211,6 +215,58 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+
+
+<script>
+  window.fbAsyncInit = function() {
+	FB.init({
+	  appId      : '1202074906996702',
+	  cookie     : true,
+	  xfbml      : true,
+	  version    : 'v6.0'
+	});
+	FB.AppEvents.logPageView();   
+  };
+  (function(d, s, id){
+	 var js, fjs = d.getElementsByTagName(s)[0];
+	 if (d.getElementById(id)) {return;}
+	 js = d.createElement(s); js.id = id;
+	 js.src = "https://connect.facebook.net/en_US/sdk.js";
+	 fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+   
+   function fbLogin(){
+		FB.login(function(response){
+			if(response.authResponse){
+				fbAfterLogin();
+			}
+		});
+   }
+   
+   function fbAfterLogin(){
+	FB.getLoginStatus(function(response) {
+		if (response.status === 'connected') {   // Lo
+			FB.api('/me', function(response) {
+			  jQuery.ajax({
+				url:'check_login.php',
+				type:'post',
+				data:'name='+response.name+'&id='+response.id,
+				success:function(result){
+					window.location.href='profile.php';
+				}
+			  });
+			});
+		}
+	});
+   }
+
+</script>
+
+
+
+
+
+
 
 </body>
 </html>

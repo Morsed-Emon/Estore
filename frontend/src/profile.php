@@ -66,13 +66,13 @@ session_start();
 						</div>
 					</div>
 				</li>
-				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span><?php echo "Hi,"; ?></a>
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span><?php echo "Hi Customer"; ?></a>
 					<ul class="dropdown-menu">
 						<li><a href="cart.php" style="text-decoration:none; color:blue;"><span class="glyphicon glyphicon-shopping-cart">Cart</a></li>
 						<li class="divider"></li>
 						<li><a href="customer_order.php" style="text-decoration:none; color:blue;">Orders</a></li>
 						<li class="divider"></li>
-						<li><a href="" style="text-decoration:none; color:blue;">Chnage Password</a></li>
+						<li><a href="new-password.php" style="text-decoration:none; color:blue;">Change Password</a></li>
 						<li class="divider"></li>
 						<li><a href="logout.php" style="text-decoration:none; color:blue;">Logout</a></li>
 					</ul>
@@ -180,6 +180,9 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+
+
+
 
 </body>
 </html>
